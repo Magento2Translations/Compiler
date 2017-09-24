@@ -6,7 +6,7 @@ class Branches
     public static $branches = [
         "2.0.2",
         "2.0.7",
-        "HEAD",
+        "Head",
     ];
 
     public static function branches()
