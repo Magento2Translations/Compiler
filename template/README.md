@@ -11,7 +11,7 @@ There have been  {{ translationCount }} strings translated of the {{ sourceCount
 
 Translation progress:![Progress](http://progressed.io/bar/{{ progress }})
 
-# Instalation
+# Installation
 ## Via composer
 To install this translation package with composer you need access to the command line of your server and you need to have [Composer](https://getcomposer.org).
 ```
