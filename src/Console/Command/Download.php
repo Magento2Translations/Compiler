@@ -107,7 +107,7 @@ class Download extends Command
                 $this->progressBar = new ProgressBar($output, 100);
                 $output->writeln('<info> Download ' . $lang . ' start</info>');
                 $this->progressBar->start();
-                $client->request('GET', '/var/' . $branch . '/source_' . $lang . '.csv', ['sink' => DOWNLOADS_DIR . DIRECTORY_SEPARATOR . $branch . DIRECTORY_SEPARATOR . $lang . '.csv']);
+                $client->request('GET', '/var/' . ucwords(strtolower($branch)) . '/source_' . $lang . '.csv', ['sink' => DOWNLOADS_DIR . DIRECTORY_SEPARATOR . $branch . DIRECTORY_SEPARATOR . $lang . '.csv']);
                 $this->progressBar->finish();
                 $output->writeln('<info></info>');
                 $output->writeln('<info> Download ' . $lang . ' completed</info>');
